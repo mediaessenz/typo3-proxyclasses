@@ -1,0 +1,21 @@
+{
+  "name": "mediaessenz/proxyclasses",
+  "description": "Proxyclasses for TYPO3",
+  "type": "typo3-cms-extension",
+  "keywords": [
+    "TYPO3 CMS",
+    "plugin"
+  ],
+  "homepage": "https://github.com/mediaessenz/typo3-proxyclasses",
+  "license": "GPL-2.0+",
+  "version": "1.0.0",
+  "replace": {
+    "proxyclasses": "self.version",
+    "mediaessenz/proxyclasses": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "MediaEssenz\\Proxyclasses\\": "Classes/"
+    }
+  }
+}

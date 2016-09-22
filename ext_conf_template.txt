@@ -1,0 +1,2 @@
+# cat=Basic/ProxyClasses/10; type=string; label=Classes to extend, separated by comma (e.g. In2code\Femanager\,In2code\Powermail\)
+ProxyClasses = In2code\Femanager\
