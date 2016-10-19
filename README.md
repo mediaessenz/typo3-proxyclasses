@@ -12,6 +12,12 @@ e.g. `In2code\Femanager\`
 
 Add Domain/Model and/or Controller with **exact** the same name than the origin in your extension
 
+Add one or more entries of this class(es) inside of your ext_localconf.php
+
+e.g. `$GLOBALS['TYPO3_CONF_VARS']['EXT']['femanager']['classes']['Domain/Model/User'][] = 'extension_key';`
+
+Try `extensionkey` if this is not working.
+
 ### Controller example
 
 To extend the edit controller of femanager add Classes/Controller/EditController.php to your own extension.
@@ -19,9 +25,9 @@ To extend the edit controller of femanager add Classes/Controller/EditController
 Extend the origin controller and add your own methods:
 ```php
 <?php
-namespace Vendor\ExtensionName\Controller;
+namespace Vendor\ExtensionKey\Controller;
 
-use \In2code\In2feuserextended\Domain\Model\User;
+use \Vendor\ExtensionKey\Domain\Model\User;
 
 class EditController extends \In2code\Femanager\Controller\EditController
 {
@@ -44,7 +50,7 @@ class EditController extends \In2code\Femanager\Controller\EditController
 
 ```php
 <?php
-namespace Vendor\ExtensionName\Domain\Model;
+namespace Vendor\ExtensionKey\Domain\Model;
 
 class User extends \In2code\Femanager\Domain\Model\User {
 
